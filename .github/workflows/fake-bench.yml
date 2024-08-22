@@ -1,8 +1,7 @@
-name: bench
+name: skip-bench
 on: [ pull_request ]
 jobs:
   benches:
-    name: Skipping Benchmarks; only run in merge queue
     runs-on: ubuntu-latest
     steps:
       - run: true
