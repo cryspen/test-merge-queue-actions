@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1724336978098,
+  "lastUpdate": 1724338435888,
   "repoUrl": "https://github.com/cryspen/test-merge-queue-actions",
   "entries": {
     "Test Benchmark": [
@@ -53,6 +53,33 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 20419,
             "range": "± 87",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jan Winkelmann (keks)",
+            "email": "jan@cryspen.com"
+          },
+          "committer": {
+            "name": "Jan Winkelmann",
+            "username": "keks",
+            "email": "146678+keks@users.noreply.github.com"
+          },
+          "id": "aaed387e4a10530ae099b77e680c4983273a7d41",
+          "message": "fix",
+          "timestamp": "2024-08-22T14:50:23Z",
+          "url": "https://github.com/cryspen/test-merge-queue-actions/commit/aaed387e4a10530ae099b77e680c4983273a7d41"
+        },
+        "date": 1724338435619,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 20",
+            "value": 20420,
+            "range": "± 105",
             "unit": "ns/iter"
           }
         ]
