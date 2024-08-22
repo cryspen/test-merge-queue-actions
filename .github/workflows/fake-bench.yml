@@ -1,7 +1,7 @@
 name: bench
 on: [ pull_request ]
 jobs:
-  bench:
+  benches:
     runs-on: ubuntu-latest
     defaults:
       run:
