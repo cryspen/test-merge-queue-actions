@@ -2,10 +2,4 @@ name: bench
 on: [ pull_request ]
 jobs:
   benches:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-    steps:
-      - name: Skipping; only running benchmarks in merge queue
-        run: true
+    name: Skipping Benchmarks; only run in merge queue
