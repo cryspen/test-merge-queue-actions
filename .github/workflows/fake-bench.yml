@@ -4,3 +4,6 @@ jobs:
   benches:
     if: false
     name: Skipping Benchmarks; only run in merge queue
+    runs-on: ubuntu-latest
+    steps:
+      - run: true
