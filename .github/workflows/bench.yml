@@ -11,7 +11,7 @@ jobs:
       - name: Run Benchmarks
         run: cargo bench | tee bench.txt
       - name: Store Benchmarks
-        uses: benchmark-action/guthub-action-benchmark@v1
+        uses: benchmark-action/github-action-benchmark@v1
         with:
           tool: 'cargo'
           output-file-path: bench.txt
