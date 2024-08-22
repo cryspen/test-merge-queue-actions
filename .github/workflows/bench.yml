@@ -10,10 +10,11 @@ jobs:
       - uses: actions/checkout@v4
       - run: rustup toolchain update nightly && rustup default nightly
       - name: Run Benchmarks
-        run: cargo +nightly bench | tee bench.txt
+        run: cargo +nightly bench --output-format bencher | tee bench.txt
       - name: Store Benchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
+          name: Test Benchmark
           tool: 'cargo'
           output-file-path: bench.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
