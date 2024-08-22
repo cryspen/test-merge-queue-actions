@@ -1,0 +1,8 @@
+name: bench
+on: [ merge_group ]
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v4
+      - name: bench
+        run: cargo bench
