@@ -7,7 +7,7 @@ jobs:
       run:
         shell: bash
     steps:
-        run: |
+      - run: |
           cat <<EOF
           This just tests what happens when there is a second file with a job of the same name.
           EOF
