@@ -8,6 +8,7 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
+      - run: rustup toolchain update nightly && rustup default nightly
       - name: Run Benchmarks
         run: cargo +nightly bench | tee bench.txt
       - name: Store Benchmarks
