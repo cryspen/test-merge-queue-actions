@@ -2,4 +2,5 @@ name: bench
 on: [ pull_request ]
 jobs:
   benches:
+    if: false
     name: Skipping Benchmarks; only run in merge queue
