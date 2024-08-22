@@ -1,0 +1,10 @@
+name: build-and-test
+on: [ pull_request ]
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v4
+      - name: build
+        run: cargo build
+      - name: test
+        run: cargo test
