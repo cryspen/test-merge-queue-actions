@@ -1,0 +1,11 @@
+name: bench
+on: [ pull_request ]
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Run Benchmarks
+        run: echo "only running benchmarks in merge queue"

@@ -1,7 +1,7 @@
 name: bench
 on: [ merge_group ]
 jobs:
-  build:
+  bench:
     runs-on: ubuntu-latest
     defaults:
       run:
