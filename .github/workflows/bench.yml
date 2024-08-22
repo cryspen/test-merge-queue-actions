@@ -8,5 +8,10 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
-      - name: bench
-        run: cargo bench
+      - name: Run Benchmarks
+        run: cargo bench | tee bench.txt
+      - name: Store Benchmarks
+        uses: benchmark-action/guthub-action-benchmark@v1
+        with:
+          tool: 'cargo'
+          output-file-path: bench.txt
