@@ -3,6 +3,11 @@ name = "test-merge-queue-actions"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+# turn off libtest handling of benchmarks, so `cargo bench' doens't fail on
+# arguments that libtest doesn't know about
+bench = false
+
 [dependencies]
 
 [dev-dependencies]
