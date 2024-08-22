@@ -1,0 +1,13 @@
+name: second
+on: [ pull_request, merge_group ]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+        run: |
+          cat <<EOF
+          This just tests what happens when there is a second file with a job of the same name.
+          EOF
