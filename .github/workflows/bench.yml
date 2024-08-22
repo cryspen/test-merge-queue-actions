@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Benchmarks
-        run: cargo bench | tee bench.txt
+        run: cargo +nightly bench | tee bench.txt
       - name: Store Benchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
