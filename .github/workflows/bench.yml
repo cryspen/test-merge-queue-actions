@@ -15,3 +15,5 @@ jobs:
         with:
           tool: 'cargo'
           output-file-path: bench.txt
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
